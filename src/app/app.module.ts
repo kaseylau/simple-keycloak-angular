@@ -14,7 +14,8 @@ function initializeKeycloak(keycloak: KeycloakService) {
       },
       initOptions: {
         onLoad: 'check-sso',
-        checkLoginIframe: false
+        checkLoginIframe: false,
+        pkceMethod: 'S256',
       },
     });
 }

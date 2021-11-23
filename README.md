@@ -9,7 +9,7 @@ In Keycloak,
 - Run keycloak server
 - Create realm `Test` (Case sensitive)
 - Create Client `frontend-app`
-- Configure the Client as public client with standard flow only. Add `http://localhost:4200/*` to the Valid Redirect URLs and a '`+`' to Web Origin.
+- Configure the Client as public client with standard flow only. Add `http://localhost:4200/*` to the Valid Redirect URLs and a '`+`' to Web Origin. Set PKCE method to `S256`.
 
 In this app,
 - Go to `app.module.ts` to edit the keycloak init config (url, realm, clientId)
